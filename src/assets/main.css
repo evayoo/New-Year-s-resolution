@@ -1,0 +1,142 @@
+body {
+  background: #f2f2f2;
+  color: #444;
+  margin: 0;
+}
+body * {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  text-align: center;
+  /* background: #e7e7e7; */
+  /* padding-top: 20px; */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  /* max-width: 1000px; */
+  /* transform: rotate(-10deg); */
+  /* border-radius: 20px; */
+}
+
+header h1 {
+  position: absolute;
+  margin: 0;
+  font-size: 3em;
+  padding-top: 25px;
+  /* margin-left: 15px; */
+  color: white;
+  transform: rotate(2deg);
+}
+
+header .nav {
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  position: absolute;
+  margin-left: 1500px;
+  margin-bottom: 250px;
+
+}
+
+.task-list {
+  font-size: 10px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.task {
+  padding: 6px 20px;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task h3, .task .icons {
+  display: inline-block;
+}
+.task .icons {
+  text-align: right;
+}
+
+.task i {
+  font-size: 1.4em;
+  margin: 10px;
+  cursor: pointer;
+  color: #bbb;
+}
+.task i.active {
+  color: #ff005d;
+}
+
+.filter {
+  width: 640px;
+  margin: 10px auto;
+  text-align: right;
+}
+.filter button {
+  display: inline-block;
+  margin-left: 10px;
+  color: black;
+  background: #fff;
+  border: 2px solid #555;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.new-task-form {
+  background: #16222d;
+  padding: 20px 0;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+form button {
+  background: #ffd859;
+  border: 0;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 6px;
+}
+form input {
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #555;
+  font-size: 1em;
+}
+form input {
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #555;
+  font-size: 1em;
+}
+.loading {
+  max-width: 1000px;
+  border: 1px solid #ffd859;
+  background: #ffe9a0;
+  color: #3a3a3a;
+  padding: 5px 0;
+  text-align: center;
+  margin: 30px auto;
+}
+

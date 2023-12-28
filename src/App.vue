@@ -1,6 +1,5 @@
 <template>
-    <main>
-    
+  <main>
       <header>
         <div class="nav">
         <router-link to="/"><button>Home</button></router-link>  
@@ -13,7 +12,16 @@
         <img src="./components/img/newyear.jpg" alt=".">
         <h1>New Year's Resolution</h1>
       </header>
+      
 
       <router-view/>
-      </main>
+      
+    </main>
+      <footer>
+        made by Chaewon Yoo<br>
+        powered by Powercoders 
+        
+      </footer>
+
+    
     </template>

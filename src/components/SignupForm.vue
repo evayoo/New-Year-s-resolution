@@ -85,7 +85,7 @@ methods: {
 
           if (response.ok) {
             // Registration successful
-            console.log('Registration successful');
+            alert('Sign up successful!');
             // You can redirect the user or perform other actions here
           } else {
             // Handle registration failure

@@ -1,10 +1,25 @@
+html {
+  min-height: 100vh;
+}
+
 body {
   background: #f2f2f2;
   color: #444;
   margin: 0;
+  /* height: 100%; */
+  min-height: 100vh;
 }
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
 body * {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 header {
@@ -50,7 +65,7 @@ header .nav {
 }
 
 .task-list {
-  font-size: 10px;
+  font-size: 20px;
   max-width: 1000px;
   margin: 20px auto;
 }
@@ -95,7 +110,7 @@ header .nav {
   border-radius: 4px;
   padding: 4px 8px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 20px;
 }
 
 .new-task-form {
@@ -139,4 +154,34 @@ form input {
   text-align: center;
   margin: 30px auto;
 }
+
+/* @media screen and (max-width: 768px){
+  .navbar-light .navbar-nav .nav-link.nav-contact::before {
+    margin-left: 0;
+    padding: 10px 0;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+  }
+} */
+
+main {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 20px;
+}
+
+footer {
+
+  background: #16222d;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+  margin-top: 12.5%;
+}
+
 
